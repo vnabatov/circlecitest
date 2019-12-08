@@ -22,6 +22,14 @@ jobs: # a collection of steps
       - run: # run tests
           name: test
           command: npm test
+  deploy:
+    machine:
+      enabled: true
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: |
+            echo "HERE I DEPLOY TO SSH USING SECRETS STORED IN CIRCLECI"
 
 workflows:
   version: 2
