@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Ticket.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> Ticket.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { memo } from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+import styled from 'styled-components'
+import { Draggable } from 'react-beautiful-dnd'
+import AppContext from '../AppContext'
+import shallowequal from 'shallowequal'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+const Container = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+${<span class="fstat-no" title="function not covered" >({</span> isHidden }) =&gt; isHidden ? 'display: none;' : ''}}
+padding:3px;
+`
+&nbsp;
+const Grid = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-row-gap: 3px;
+grid-column-gap: 3px;
+justify-content: center;
+  align-items: center;
+`
+&nbsp;
+const Label = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+text-align:center;
+word-break: break-word;
+text-transform: capitalize;
+${<span class="fstat-no" title="function not covered" >({</span> selected }) =&gt; selected ? 'font-weight: bold;' : ''}}
+&nbsp;
+`
+&nbsp;
+const Ticket = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+min-height: 100px;
+background: rgba(255,255,255, .7);
+`
+const TicketHeader = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+transition: all .2s;
+align-items: center;
+border-radius: 4px 4px ${<span class="fstat-no" title="function not covered" >({</span> isSmall }) =&gt; isSmall ? '4px 4px' : '0 0'};
+&nbsp;
+background-color: #23D160;
+&nbsp;
+color: #fff;
+display: -ms-flexbox;
+display: flex;
+font-weight: 700;
+justify-content: space-between;
+line-height: 1.25;
+padding: 4px;
+position: relative;
+word-break: break-word;
+&nbsp;
+${<span class="fstat-no" title="function not covered" >({</span> isSmall }) =&gt; isSmall ? 'font-size: 0.6rem;' : ''}}
+${<span class="fstat-no" title="function not covered" >({</span> relationSameSprint }) =&gt; relationSameSprint ? `background-color: orange;` : ''}}
+${<span class="fstat-no" title="function not covered" >({</span> relationEarlier }) =&gt; relationEarlier ? 'background-color: #D12341;' : ''}}
+${<span class="fstat-no" title="function not covered" >({</span> relationBacklog }) =&gt; relationBacklog ? 'background-color: red;' : ''}}
+${<span class="fstat-no" title="function not covered" >({</span> selectedStory }) =&gt; selectedStory ? 'border-top: 3px solid green;' : ''}}
+${<span class="fstat-no" title="function not covered" >({</span> noStory }) =&gt; noStory ? 'border-right: 3px solid #AB23D1;' : ''}}
+`
+&nbsp;
+const TicketBody = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+padding: 3px;
+word-break: break-word;
+`
+const Error = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+font-weight: bold;
+color: red;
+`
+&nbsp;
+const areRelatedTaskPositionsEarlier = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>askPostionsCache, taskId, taskRelated) =&gt; {</span>
+  let errorFound = <span class="cstat-no" title="statement not covered" >false</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!taskRelated) <span class="cstat-no" title="statement not covered" >return false</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  taskRelated.split(',').forEach(<span class="fstat-no" title="function not covered" >re</span>lated =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (taskPostionsCache[related] &gt; taskPostionsCache[taskId]) {</span>
+<span class="cstat-no" title="statement not covered" >      errorFound = true</span>
+    }
+  })
+<span class="cstat-no" title="statement not covered" >  return errorFound</span>
+}
+&nbsp;
+const areRelatedTaskPositionsSameSprint = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>askPostionsCache, taskId, taskRelated) =&gt; {</span>
+  let errorFound = <span class="cstat-no" title="statement not covered" >false</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!taskRelated) <span class="cstat-no" title="statement not covered" >return false</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  taskRelated.split(',').forEach(<span class="fstat-no" title="function not covered" >re</span>lated =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (taskPostionsCache[related] === taskPostionsCache[taskId]) {</span>
+<span class="cstat-no" title="statement not covered" >      errorFound = true</span>
+    }
+  })
+<span class="cstat-no" title="statement not covered" >  return errorFound</span>
+}
+&nbsp;
+const areRelatedTaskPositionsInBacklog = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>askPostionsCache, taskId, taskRelated) =&gt; {</span>
+  let errorFound = <span class="cstat-no" title="statement not covered" >false</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!taskRelated) <span class="cstat-no" title="statement not covered" >return false</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  taskRelated.split(',').forEach(<span class="fstat-no" title="function not covered" >re</span>lated =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (taskPostionsCache[related] === 1) {</span>
+<span class="cstat-no" title="statement not covered" >      errorFound = true</span>
+    }
+  })
+<span class="cstat-no" title="statement not covered" >  return errorFound</span>
+}
+&nbsp;
+const Task = memo(({<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+  selectedStory,
+  task,
+  selectedTask,
+  taskPostionsCache,
+  isCompact,
+  deleteTask,
+  selectStory,
+  dependendTasks,
+  selectTask
+}) =&gt; {
+  const isSelectedStory = <span class="cstat-no" title="statement not covered" >selectedStory &amp;&amp; selectedStory === task.story</span>
+  const isSelectedTask = <span class="cstat-no" title="statement not covered" >selectedTask &amp;&amp; selectedTask === task.id</span>
+  const relationEarlier = <span class="cstat-no" title="statement not covered" >areRelatedTaskPositionsEarlier(taskPostionsCache, task.id, task.related)</span>
+  const relationSameSprint = <span class="cstat-no" title="statement not covered" >areRelatedTaskPositionsSameSprint(taskPostionsCache, task.id, task.related)</span>
+  const relationBacklog = <span class="cstat-no" title="statement not covered" >areRelatedTaskPositionsInBacklog(taskPostionsCache, task.id, task.related)</span>
+<span class="cstat-no" title="statement not covered" >  return !isCompact || isSelectedStory || isSelectedTask ? &lt;Ticket</span>
+    key={'task-' + task.id}
+    id={'task-' + task.id}
+    title={JSON.stringify(task)}
+    onClick={()<span class="fstat-no" title="function not covered" > =</span>&gt; selectTask(task)}
+    className='message is-small'
+  &gt;
+    &lt;TicketHeader
+      selectedStory={isSelectedStory}
+      selectedTask={isSelectedTask}
+      noStory={!task.story}
+      relationEarlier={relationEarlier}
+      relationSameSprint={relationSameSprint}
+      relationBacklog={relationBacklog}
+    &gt;
+      &lt;a target='_blank' href={`https://jira.wiley.com/browse/${task.id}`}&gt;#{task.id}&lt;/a&gt;&amp;nbsp;/&amp;nbsp;{task.sp}SP / ver:{task.v}
+      &lt;button className='delete is-small' aria-label='delete' onClick={() =&gt; deleteTask(task.id)} /&gt;<span class="fstat-no" title="function not covered" ></span>
+    &lt;/TicketHeader&gt;
+    &lt;TicketBody title={task.description}&gt;
+      {task.summary}
+      &lt;Grid&gt;
+        &lt;Label title='depends on'&gt;{task.related}&lt;/Label&gt;
+        &lt;Label selected={selectedStory &amp;&amp; selectedStory === task.story} title='story' onClick={() =&gt; selectStory(task.story)}&gt;{task.story}&lt;/Label&gt;<span class="fstat-no" title="function not covered" ></span>
+        &lt;Label title='enables'&gt;{dependendTasks[task.id] ? dependendTasks[task.id].join(',') : ''}&lt;/Label&gt;
+      &lt;/Grid&gt;
+      &lt;Error&gt;
+        {relationEarlier ? &lt;p&gt;Enabler is in later sprint&lt;/p&gt; : ''}<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+        {relationSameSprint ? &lt;p&gt;Enabler is in the same sprint&lt;/p&gt; : ''}<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+        {relationBacklog ? &lt;p&gt;Enabler is in the backlog&lt;/p&gt; : ''}<span class="branch-0 cbranch-no" title="branch not covered" ></span>
+      &lt;/Error&gt;
+    &lt;/TicketBody&gt;
+  &lt;/Ticket&gt; : &lt;TicketHeader
+    isSmall
+    key={'task-' + task.id}
+    onClick={()<span class="fstat-no" title="function not covered" > =</span>&gt; selectTask(task)}
+    selectedTask={isSelectedTask}
+    selectedStory={isSelectedStory}
+    title={task.summary + '/' + task.description}
+    relationEarlier={relationEarlier}
+    relationSameSprint={relationSameSprint}
+    relationBacklog={relationBacklog}
+  &gt;
+#{task.id} / {task.summary} / {task.sp}SP
+    &lt;button className='delete is-small' aria-label='delete' onClick={() =&gt; deleteTask(task.id)} /&gt;<span class="fstat-no" title="function not covered" ></span>
+  &lt;/TicketHeader&gt;
+}, <span class="fstat-no" title="function not covered" >(p</span>revProps, nextProps) =&gt; {
+  const isPropsEqual = shallowequal(prevProps.tas<span class="cstat-no" title="statement not covered" >k, prevProps.task) &amp;&amp;</span>
+    nextProps.task.id !== nextProps.selectedTask &amp;&amp;
+    nextProps.task.id !== prevProps.selectedTask &amp;&amp;
+    prevProps.task.story === '' &amp;&amp;
+    prevProps.task.story !== prevProps.selectedStory &amp;&amp;
+    nextProps.task.story !== nextProps.selectedStory &amp;&amp;
+    prevProps.isCompact === nextProps.isCompact &amp;&amp;
+    prevProps.task.sp === nextProps.task.sp &amp;&amp;
+    prevProps.task.summary === nextProps.task.summary &amp;&amp;
+    prevProps.task.related === nextProps.task.related &amp;&amp;
+    prevProps.taskLastUpdate === nextProps.taskLastUpdate
+<span class="cstat-no" title="statement not covered" >  return isPropsEqual</span>
+})
+&nbsp;
+export default ({ task, index }) =&gt; {
+  return &lt;AppContext.Consumer&gt;{({ deleteTask, selectedStory, selectTask, selectStory, taskPostionsCache, dependendTasks, isCompact, selectedTask }) =&gt; {
+    const isHidden = selectedStory &amp;&amp; selectedStory !== task.story
+    return (
+      &lt;Draggable draggableId={task.id} index={index}&gt;{(provided) =&gt; (
+        &lt;Container
+          className={'task' + task.id}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+          ref={provided.innerRef}
+          isHidden={isHidden}
+        &gt;
+          &lt;Task {...{
+            selectedStory,
+            task,
+            taskPostionsCache,
+            isCompact,
+            deleteTask,
+            selectStory,
+            dependendTasks,
+            selectTask,
+            selectedTask
+          }} /&gt;
+        &lt;/Container&gt;
+      )}
+      &lt;/Draggable&gt;
+    )
+  }}
+  &lt;/AppContext.Consumer&gt;
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 30 2019 18:20:26 GMT+0300 (GMT+03:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

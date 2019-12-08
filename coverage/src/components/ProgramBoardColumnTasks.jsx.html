@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/ProgramBoardColumnTasks.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> ProgramBoardColumnTasks.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/7</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+import styled from 'styled-components'
+import AppContext from '../AppContext'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+const Story = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+transition: .2s all;
+padding: 4px;
+max-height: 70px;
+border: 1px solid lightgray;
+overflow: hidden;
+margin: 0 !important;
+background-color: ${<span class="fstat-no" title="function not covered" >({</span> selected }) =&gt; selected ? 'rgba(50, 115, 220, .7)' : 'none'} !important;
+`
+&nbsp;
+const Container = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+margin:3px;
+border: 1px solid lightgrey;
+border-radius: 2px;
+width: 100%;
+overflow: hidden;
+background: rgba(255,255,255,.8);
+`
+const Title = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+transition: all .2s;
+padding:3px;
+font-size:1.2rem;
+width: 100%;
+text-align:center;
+background: ${<span class="fstat-no" title="function not covered" >({</span> error, fit }) =&gt; error ? 'lightcoral' : (fit ? 'lightgreen' : 'none')}
+opacity: .7;
+z-index: 2;
+`
+const TaskList = styled.div`<span class="cstat-no" title="statement not covered" ></span>
+padding:3px;
+min-width: 100px;
+`
+const TaskLink = styled.a`<span class="cstat-no" title="statement not covered" ></span>
+text-decoration: none !important;
+font-size:14px;
+`
+&nbsp;
+export default ({ tasks, title }) =&gt; (
+  &lt;AppContext.Consumer&gt;
+    {({ selectStory, selectedStory, isCompact }) =&gt; (
+      &lt;Container&gt;&lt;Title&gt;{title}&lt;/Title&gt;&lt;TaskList&gt;
+        {tasks.map(({ story, id, summary }) =&gt; {
+          return isCompact ? &lt;Story key={'compact-pb-task-' + id} hide={isCompact &amp;&amp; selectedStory !== story} selected={selectedStory === story} onClick={() =&gt; selectStory(story)} className={`message is-small story${id}`}&gt;
+            &lt;TaskLink tilte={'task ' + summary} href={`https://jira.wiley.com/browse/${story}`}&gt;{id}&lt;/TaskLink&gt;
+          &lt;/Story&gt; : &lt;Story id={'pb-task-' + id} selected={selectedStory === story} onClick={() =&gt; selectStory(story)} key={'pb-task-' + id} className={`message is-small story${id}`}&gt;
+            &lt;TaskLink href={`https://jira.wiley.com/browse/${story}`}&gt;T&amp;nbsp;/&amp;nbsp;{id}&amp;nbsp;({story || ' NO STORY '})&lt;/TaskLink&gt;&lt;div&gt;{summary}&lt;/div&gt;
+          &lt;/Story&gt;
+        })}
+      &lt;/TaskList&gt;&lt;/Container&gt;)}
+  &lt;/AppContext.Consumer&gt;
+)
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 30 2019 18:20:26 GMT+0300 (GMT+03:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

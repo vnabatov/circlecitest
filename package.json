@@ -1,0 +1,132 @@
+{
+  "name": "pipl",
+  "homepage": "spaceshipyard.site",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "bulma": "^0.7.5",
+    "cross-env": "^6.0.3",
+    "date-fns": "^2.5.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.5",
+    "jest-coverage-badges": "^1.1.2",
+    "jira-connector": "^2.16.1",
+    "json2csv": "^4.5.4",
+    "lowdb": "^1.0.0",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.4",
+    "react": "^16.9.0",
+    "react-beautiful-dnd": "^11.0.5",
+    "react-collapse": "^5.0.0",
+    "react-date-range": "^1.0.0-beta",
+    "react-dom": "^16.9.0",
+    "react-hoox": "^0.2.3",
+    "react-lineto": "^3.1.3",
+    "react-select": "^3.0.8",
+    "react-test-renderer": "^16.12.0",
+    "shallowequal": "^1.1.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "string-hash": "^1.1.3",
+    "styled-components": "^4.3.2",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.7.2",
+    "babel-core": "6.22.1",
+    "babel-eslint": "7.1.1",
+    "babel-jest": "18.0.0",
+    "babel-loader": "6.2.10",
+    "babel-preset-react-app": "^2.2.0",
+    "babel-runtime": "^6.20.0",
+    "case-sensitive-paths-webpack-plugin": "1.1.4",
+    "chalk": "1.1.3",
+    "connect-history-api-fallback": "1.3.0",
+    "cross-spawn": "4.0.2",
+    "css-loader": "0.26.1",
+    "detect-port": "1.1.0",
+    "dotenv": "2.0.0",
+    "eslint": "3.16.1",
+    "eslint-config-react-app": "^0.6.2",
+    "eslint-loader": "1.6.0",
+    "eslint-plugin-flowtype": "2.21.0",
+    "eslint-plugin-import": "2.0.1",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.4.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.10.0",
+    "fs-extra": "0.30.0",
+    "html-webpack-plugin": "2.24.0",
+    "http-proxy-middleware": "0.17.3",
+    "jest": "^18.1.0",
+    "json-loader": "0.5.4",
+    "object-assign": "4.1.1",
+    "postcss-loader": "1.2.2",
+    "promise": "7.1.1",
+    "react-dev-utils": "^0.5.2",
+    "standardjs": "^1.0.0-alpha",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2",
+    "webpack-manifest-plugin": "1.1.0",
+    "whatwg-fetch": "2.0.2"
+  },
+  "scripts": {
+    "eslint": "standard --fix",
+    "start": "node scripts/start.js",
+    "start:nodemon": "nodemon scripts/start.js",
+    "build": "npm run eslint && node scripts/build.js",
+    "db-server": "node scripts/db-server.js",
+    "load:s": "node scripts/load-from-jira.js --maxResults=1000 --loadTasks=false",
+    "load:s-t": "node scripts/load-from-jira.js --maxResults=1000 --loadTasks=true",
+    "test": "jest",
+    "test:badges": "npm test && jest-coverage-badges"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html",
+      "json-summary"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "globals": {
+      "window": {}
+    }
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      "react-hoox"
+    ]
+  },
+  "proxy": "http://localhost:3001",
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

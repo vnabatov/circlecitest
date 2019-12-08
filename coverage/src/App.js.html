@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/App.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">src</a> App.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/91</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/88</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Fragment } from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+import axios from 'axios'
+import use from 'react-hoox'
+import { format } from 'date-fns'
+import io from 'socket.io-client'
+&nbsp;
+import Sprints from './components/Sprints'
+import Navbar from './components/Navbar'
+import Stories from './components/Stories'
+import AppContext from './AppContext'
+import Relations from './components/Relations'
+import RelationsProgramBoard from './components/RelationsProgramBoard'
+&nbsp;
+import 'bulma/css/bulma.css'
+import './App.css'
+import ProgramBoard from './components/ProgramBoard'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+const api = <span class="cstat-no" title="statement not covered" >{ db: '/db', tasks: '/tasks', sprints: '/sprints', columns: '/columns' }</span>
+const defaultForm = <span class="cstat-no" title="statement not covered" >{ id: '', description: 'empty', teamName: '', summary: '', related: '', sp: '', story: '' }</span>
+&nbsp;
+let form = { ...defaultForm }<span class="cstat-no" title="statement not covered" ></span>
+let isMenuOpen = <span class="cstat-no" title="statement not covered" >false</span>
+let allRelations = <span class="cstat-no" title="statement not covered" >false</span>
+let isCompact = <span class="cstat-no" title="statement not covered" >true</span>
+let showRelations = <span class="cstat-no" title="statement not covered" >true</span>
+let selectedStory = <span class="cstat-no" title="statement not covered" >''</span>
+let selectedTask = <span class="cstat-no" title="statement not covered" >''</span>
+let taskFilter = <span class="cstat-no" title="statement not covered" >''</span>
+let relationsRedraw = <span class="cstat-no" title="statement not covered" >''</span>
+&nbsp;
+let dbs
+let storiesFilter = <span class="cstat-no" title="statement not covered" >{}</span>
+&nbsp;
+const NETWORK = <span class="cstat-no" title="statement not covered" >process.env.NETWORK || 'ws'</span>
+let socket
+&nbsp;
+<span class="cstat-no" title="statement not covered" >if (NETWORK === 'ws') {</span>
+<span class="cstat-no" title="statement not covered" >  socket = io('/')</span>
+<span class="cstat-no" title="statement not covered" >  socket.on('db', <span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {</span>
+    const parsedData = <span class="cstat-no" title="statement not covered" >JSON.parse(data)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    parsedData.sprints.forEach(<span class="fstat-no" title="function not covered" >sp</span>rint =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      sprint.dirty = false</span>
+    })
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    dbs = parsedData</span>
+<span class="cstat-no" title="statement not covered" >    console.log('dbs', dbs)</span>
+  })
+<span class="cstat-no" title="statement not covered" >  socket.on('connect', <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    console.log('connect')</span>
+  })
+}
+&nbsp;
+const NavbarContainer = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  use(() =&gt; form.id)
+  use(() =&gt; isMenuOpen)
+  use(() =&gt; relationsRedraw)
+  use(() =&gt; showRelations)
+  use(() =&gt; allRelations)
+  use(() =&gt; isCompact)
+  use(() =&gt; dbs &amp;&amp; dbs.sprints.map(({ teamName }) =&gt; teamName))
+  use(() =&gt; dbs &amp;&amp; dbs.taskLastUpdate)
+  use(() =&gt; taskFilter)
+&nbsp;
+  const clearForm = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    form = { ...defaultForm }</span>
+<span class="cstat-no" title="statement not covered" >    isMenuOpen = false</span>
+  }
+&nbsp;
+  const updateTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    socket.emit('task:update', JSON.stringify(data))</span>
+<span class="cstat-no" title="statement not covered" >    clearForm()</span>
+  }
+&nbsp;
+  const deleteTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; {</span>
+    const taskToRemoveId = <span class="cstat-no" title="statement not covered" >id</span>
+<span class="cstat-no" title="statement not covered" >    if (dbs.dependendTasks[taskToRemoveId] &amp;&amp; dbs.dependendTasks[taskToRemoveId].length) {</span>
+<span class="cstat-no" title="statement not covered" >      window.alert(`please clear relations with ${dbs.dependendTasks[taskToRemoveId]}`)</span>
+<span class="cstat-no" title="statement not covered" >      return</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (window.confirm('sure?')) {</span>
+<span class="cstat-no" title="statement not covered" >      socket.emit('task:delete', taskToRemoveId)</span>
+<span class="cstat-no" title="statement not covered" >      clearForm()</span>
+    }
+  }
+&nbsp;
+  const downloadDb = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    function <span class="fstat-no" title="function not covered" >downloadURI </span>(uri, name) {
+      var link = <span class="cstat-no" title="statement not covered" >document.createElement('a')</span>
+<span class="cstat-no" title="statement not covered" >      link.download = name</span>
+<span class="cstat-no" title="statement not covered" >      link.href = uri</span>
+<span class="cstat-no" title="statement not covered" >      document.body.appendChild(link)</span>
+<span class="cstat-no" title="statement not covered" >      link.click()</span>
+<span class="cstat-no" title="statement not covered" >      document.body.removeChild(link)</span>
+    }
+<span class="cstat-no" title="statement not covered" >    downloadURI('db', format(new Date(), 'yyyy-MM-dd_HH_mm_ss') + '-db.json')</span>
+  }
+&nbsp;
+  const downloadCSV = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+    function <span class="fstat-no" title="function not covered" >downloadURI </span>(uri, name) {
+      var link = <span class="cstat-no" title="statement not covered" >document.createElement('a')</span>
+<span class="cstat-no" title="statement not covered" >      link.download = name</span>
+<span class="cstat-no" title="statement not covered" >      link.href = uri</span>
+<span class="cstat-no" title="statement not covered" >      document.body.appendChild(link)</span>
+<span class="cstat-no" title="statement not covered" >      link.click()</span>
+<span class="cstat-no" title="statement not covered" >      document.body.removeChild(link)</span>
+    }
+<span class="cstat-no" title="statement not covered" >    downloadURI('dbCSV', format(new Date(), 'yyyy-MM-dd_HH_mm_ss') + '-PIPL.csv')</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return &lt;div className='container is-widescreen'&gt;</span>
+    &lt;AppContext.Provider value={{
+      deleteTask,
+      updateTask,
+      clearForm,
+      dependendTasks: dbs &amp;&amp; dbs.dependendTasks,
+      taskPostionsCache: dbs &amp;&amp; dbs.taskPostionsCache,
+      isCompact
+    }}&gt;
+&nbsp;
+      &lt;Navbar {...{
+        downloadDb,
+        downloadCSV,
+        isCompact,
+        form,
+        dbs,
+        taskFilter,
+        updateTaskFilter: (v<span class="fstat-no" title="function not covered" >) </span>=&gt; (taskFilter = v),
+        isMenuOpen,
+        allRelations,
+        showRelations,
+        menuToggle: ()<span class="fstat-no" title="function not covered" > =</span>&gt; (isMenuOpen = !isMenuOpen),
+        menuClose: ()<span class="fstat-no" title="function not covered" > =</span>&gt; (isMenuOpen = false),
+        relationsToggle: ()<span class="fstat-no" title="function not covered" > =</span>&gt; (showRelations = !showRelations),
+        allRelationsToggle: ()<span class="fstat-no" title="function not covered" > =</span>&gt; (allRelations = !allRelations),
+        compactToggle: ()<span class="fstat-no" title="function not covered" > =</span>&gt; (isCompact = !isCompact)
+      }} /&gt;
+      {showRelations &amp;&amp; dbs &amp;&amp; &lt;RelationsProgramBoard showRelations={showRelations} relationsRedraw={relationsRedraw} tasks={dbs.tasks} selectedStory={selectedStory} /&gt;}
+      {showRelations &amp;&amp; dbs &amp;&amp; &lt;Relations allRelations={allRelations} relationsRedraw={relationsRedraw} tasks={dbs.tasks} selectedId={form.id} /&gt;}
+    &lt;/AppContext.Provider&gt;
+  &lt;/div&gt;
+}
+&nbsp;
+const Content = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+  use(() =&gt; showRelations)
+  use(() =&gt; isCompact)
+  use(() =&gt; selectedStory)
+  use(() =&gt; selectedTask)
+  use(() =&gt; dbs &amp;&amp; dbs.sprints)
+  use(() =&gt; dbs &amp;&amp; dbs.taskLastUpdate)
+  use(() =&gt; storiesFilter)
+  use(() =&gt; allRelations)
+  use(() =&gt; taskFilter)
+&nbsp;
+  const clearForm = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    form = { ...defaultForm }</span>
+<span class="cstat-no" title="statement not covered" >    isMenuOpen = false</span>
+  }
+&nbsp;
+  const setData = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    socket.emit('sprint:update', JSON.stringify(data))</span>
+  }
+&nbsp;
+  const updateTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    socket.emit('task:update', JSON.stringify(data))</span>
+<span class="cstat-no" title="statement not covered" >    clearForm()</span>
+  }
+&nbsp;
+  const deleteTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>d) =&gt; {</span>
+    const taskToRemoveId = <span class="cstat-no" title="statement not covered" >id</span>
+<span class="cstat-no" title="statement not covered" >    if (dbs.dependendTasks[taskToRemoveId] &amp;&amp; dbs.dependendTasks[taskToRemoveId].length) {</span>
+<span class="cstat-no" title="statement not covered" >      window.alert(`please clear relations with ${dbs.dependendTasks[taskToRemoveId]}`)</span>
+<span class="cstat-no" title="statement not covered" >      return</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (window.confirm('sure?')) {</span>
+<span class="cstat-no" title="statement not covered" >      socket.emit('task:delete', taskToRemoveId)</span>
+<span class="cstat-no" title="statement not covered" >      clearForm()</span>
+    }
+  }
+&nbsp;
+  const updateColumnCount = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(c</span>olumnId, teamName, size) =&gt; {</span>
+    axios.patch(api.columns + '/' + columnId, { teamName, size })
+<span class="cstat-no" title="statement not covered" >    socket.emit('column:count', JSON.stringify({ columnId, teamName, size }))</span>
+  }
+&nbsp;
+  const selectTask = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(t</span>askData) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    isMenuOpen = true</span>
+<span class="cstat-no" title="statement not covered" >    form = taskData</span>
+<span class="cstat-no" title="statement not covered" >    form.oldId = taskData.id</span>
+    // selectedTask = taskData.id
+  }
+&nbsp;
+  const selectStory = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >st</span>ory =&gt; (selectedStory = (selectedStory !== story ? story : ''))</span>
+&nbsp;
+  const addStory = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tory) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    socket.emit('story:create', JSON.stringify(story))</span>
+  }
+&nbsp;
+  const redrawRelations = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    relationsRedraw = Date.now()</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return &lt;div className='container is-widescreen'&gt;</span>
+    &lt;AppContext.Provider value={{
+      selectStory,
+      deleteTask,
+      updateTask,
+      updateColumnCount,
+      setData,
+      selectTask,
+      selectedTask,
+      redrawRelations,
+      clearForm,
+      taskLastUpdate: dbs &amp;&amp; dbs.taskLastUpdate,
+      selectedStory,
+      dependendTasks: dbs &amp;&amp; dbs.dependendTasks,
+      taskPostionsCache: dbs &amp;&amp; dbs.taskPostionsCache,
+      isCompact
+    }}&gt;
+      {(!dbs) ?<span class="branch-0 cbranch-no" title="branch not covered" > 'Loading'</span> : &lt;div className='content'&gt;
+        &lt;Stories addStory={addStory} storiesFilter={storiesFilter} tasks={dbs.tasks} stories={dbs.stories} /&gt;
+&nbsp;
+        &lt;Sprints taskFilter={taskFilter} setData={setData} tasks={dbs.tasks} sprints={dbs.sprints} /&gt;
+&nbsp;
+        &lt;ProgramBoard storyIndex={dbs.storyIndex} taskStoryIndex={dbs.taskStoryIndex} stories={dbs.stories} tasks={dbs.tasks} sprints={dbs.sprints} /&gt;
+      &lt;/div&gt;}
+    &lt;/AppContext.Provider&gt;
+  &lt;/div&gt;
+}
+&nbsp;
+const App = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return &lt;Fragment&gt;</span>
+    &lt;NavbarContainer /&gt;
+    &lt;Content /&gt;
+  &lt;/Fragment&gt;
+}
+export default App
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 30 2019 18:20:26 GMT+0300 (GMT+03:00)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
